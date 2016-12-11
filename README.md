@@ -14,8 +14,6 @@ It is inspired by [million12/centos-supervisor](https://registry.hub.docker.com/
 9001:9001 maps the supervisor web server
 9103:4200 maps the shellinabox web server
 
-Previously you should have run:
-
 Default shellinabox host mapped port is 9100, but if you want to use another as in this 'docker run' example, you must use the environment variable SHELLINABOX_PORT to make shellinabox added to the supervisor web page.
 
 
