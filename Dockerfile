@@ -1,8 +1,6 @@
 FROM orboan/dcss-shellinabox-httpd
 MAINTAINER Oriol Boix Anfosso <dev@orboan.com>
 
-RUN yum update -y
-
 RUN \ 
 rpm -Uvh --replacepkgs https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
 RUN \
