@@ -13,5 +13,5 @@ RUN yum install -y ghostscript
 # - Clean YUM caches to minimise Docker image size...
 RUN \
   yum clean all && rm -rf /tmp/yum*
-
+ 
 ADD container-files /
