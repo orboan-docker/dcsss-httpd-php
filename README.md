@@ -7,7 +7,7 @@ It is inspired by [million12/centos-supervisor](https://registry.hub.docker.com/
 
 ## Docker run example:
 
-#### docker run -p 8000:80 -p 2222:22 -p 9001:9001 -e SHELLINABOX_PORT=9103 -p 9103:4200 -d -v ~/data:/data orboan/dcsss-httpd-php
+#### docker run -p 8000:80 -p 2222:22 -p 9001:9001 -e USER=myusername -e PASSWORD=mypassword -e SHELLINABOX_PORT=9103 -p 9103:4200 -d -v ~/data:/data orboan/dcsss-httpd-php
 
 8000:80 maps the httpd server (apache2)
 2222:22 maps the sshd server
@@ -20,19 +20,19 @@ Default shellinabox host mapped port is 9100, but if you want to use another as 
 
 
 ## SSH default login 
-#### Credentials using username and password:
+#### Default credentials using username and password:
 username: www
 
 password: iaw
 
-You can change them in container-files/config/init/create_user.sh
+You can change them using USER and PASSWORD environment variables
 
 ## Supervisor management via web interface
 
 The embedded supervisor web server is listening in port 9001, thus you may create a new container by running the image adding the option
 -p xxxx:9001 to 'docker run'
 
-#### Credentials also are:
+#### Default credentials also are:
 username: www
 
 password: iaw
@@ -84,8 +84,7 @@ username: www
 
 password: iaw
 
-You can change them in container-files/config/init/create_user.sh
-
+You can change them using USER and PASSWORD environment variables.
 
 ## Usage
 

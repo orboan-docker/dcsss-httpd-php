@@ -14,4 +14,7 @@ RUN yum install -y ghostscript
 RUN \
   yum clean all && rm -rf /tmp/yum*
  
+ENV USER=www
+ENV PASSWORD=iaw
+
 ADD container-files /
