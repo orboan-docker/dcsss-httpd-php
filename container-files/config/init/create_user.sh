@@ -40,4 +40,5 @@ fi
 mkdir -p /home/$user
 cp /etc/skel/.b* /home/$user
 chown -R $user:$user /home/$user
-
+chown -R $user:$user /var/lib/php
+chown -R $user:$user /var/lib/dav

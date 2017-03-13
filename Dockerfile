@@ -17,4 +17,6 @@ RUN \
 ENV USER=www
 ENV PASSWORD=iaw
 
+VOLUME /data/www/html
+
 ADD container-files /
