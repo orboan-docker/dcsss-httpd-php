@@ -20,6 +20,7 @@ echo "user created"
 fi
 mkdir -p /data/$user/html
 chown -R $user:$user /data/$user
+chmod -R 777 /data/$user
 
 #Creating another user if $USER is not www
 user=$USER
